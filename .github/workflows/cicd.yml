@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: deploying
-       run: echo "deploying"
+      run: echo "deploying"
 
     
     
