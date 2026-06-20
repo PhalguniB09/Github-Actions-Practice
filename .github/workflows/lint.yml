@@ -9,7 +9,7 @@ on:
     paths: "*.py"
     
 jobs:
-  code:
+  code-linting:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout/clone the code
@@ -17,4 +17,7 @@ jobs:
 
       - name: install linter
         run: pip install ruff
+
+      - name: check the files for linting
+        ruff check .
       
