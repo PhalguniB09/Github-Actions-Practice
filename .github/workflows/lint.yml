@@ -1,3 +1,4 @@
+#This code is from https://github.com/LondheShubham153/flask-app-ecs
 # what is goal of your workflow
 # Goal: 
 
@@ -13,4 +14,7 @@ jobs:
     steps:
       - name: Checkout/clone the code
         uses: actions/checkout@v7
+
+      - name: install linter
+        run: pip install ruff
       
