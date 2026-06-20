@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello to everyone
-        run: exho "Hello !"
+        run: echo "Hello !"
 # steps -->should be inside the jobs
 # Actions--> should be inside the steps
